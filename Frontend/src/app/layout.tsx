@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Minify - URL Shortener ",
-  description: "Minify - The Ultimate URL Shortener is a powerful and intuitive URL shortener designed to simplify theway you share links online. Whether you’re a marketer, developer, orcasual user, Minimalist provides a seamless experience for managing your URLs with ease.",
+  description: "Minify is a digital URL shortener that simplifies long web addresses into concise, shareable links, making it ideal for businesses and individuals seeking to streamline their digital marketing efforts.",
 };
 
 export default function RootLayout({

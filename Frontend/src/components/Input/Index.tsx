@@ -5,10 +5,11 @@ import { PlaceholdersAndVanishInput } from "./Input";
 export function PlaceholdersAndVanishInputDemo() {
 
   const placeholders = [
-    "Enter any URL",
-    "Watch it get minimalised",
-    "A simple clean URL",
-    "Easy to share",
+    "Why choose Minfiy?", 
+    "1. Simple & Clean URLs",
+    "2. Easy to share URLs",
+    "3. User-Friendly Interface",
+    "4. Speed and Reliability"
   ];
 
   return (

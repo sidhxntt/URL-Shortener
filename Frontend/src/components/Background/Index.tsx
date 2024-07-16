@@ -32,20 +32,17 @@ export function BackgroundBeamsDemo() {
             Minify
           </h1>
           <p className="text-neutral-500 max-w-lg mx-auto my-2 text-sm text-center relative z-10">
-            <span className="font-extrabold">
-              Minify - The Ultimate URL Shortener
-            </span>{" "}
-            is a powerful and intuitive URL shortener designed to simplify the
-            way you share links online. Whether you’re a marketer, developer, or
-            casual user, Minimalist provides a seamless experience for managing
-            your URLs with ease.
+            <span className="font-extrabold">Minify</span> is a digital URL
+            shortener that simplifies long web addresses into concise, shareable
+            links, making it ideal for businesses and individuals seeking to
+            streamline their digital marketing efforts.{" "}
           </p>
           {isURL && (
             <div className="flex justify-center p-4 relative z-20">
               <div className="flex gap-3">
-                <Link 
-                className="hover:underline"
-                href={isURL}>{isURL}</Link>
+                <Link className="hover:underline" href={isURL}>
+                  {isURL}
+                </Link>
                 <button
                   className="cursor-pointer"
                   onClick={() => handleCopyToClipboard(isURL)}
