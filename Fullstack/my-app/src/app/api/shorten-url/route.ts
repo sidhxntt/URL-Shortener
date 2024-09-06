@@ -4,6 +4,9 @@ import { NextRequest, NextResponse } from 'next/server';
 
 const SHORT_URL = process.env.SHORT_URL 
 
+export async function GET(req: NextRequest) {
+  return NextResponse.json({ message: "check complete" });
+}
 export async function POST(req: NextRequest) {
   try {
     const { input } = await req.json();
