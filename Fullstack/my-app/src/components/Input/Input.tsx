@@ -7,7 +7,7 @@ import { useForm } from "react-hook-form";
 import { useRecoilState } from "recoil";
 import { Result } from "@/recoil/atom";
 import axios from "axios";
-
+const URL = process.env.NEXT_PUBLIC_URL;
 
 export function PlaceholdersAndVanishInput({
   placeholders,
@@ -176,7 +176,7 @@ export function PlaceholdersAndVanishInput({
   const SubmitFunction = async (data: any) => {
     vanishAndSubmit();
     try {
-      const response = await axios.post("http://localhost:3000/api/shorten-url", data
+      const response = await axios.post(`${URL}/shorten-url`, data
       );
       if(response){
         setIsURL(response.data.URL);
